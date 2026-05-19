@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:label="Kiri Engine Unlock"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.NoActionBar">
+
+        <!-- Xposed module metadata -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Unlock Kiri Engine Pro/VIP features. Hooks subscription verification at the client level. Requires LSPosed (Zygisk). For educational use." />
+
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+
+        <!-- Explicitly declare the hook entry class -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+
+    </application>
+</manifest>
