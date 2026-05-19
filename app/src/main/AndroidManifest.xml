@@ -4,8 +4,7 @@
     <application
         android:allowBackup="false"
         android:label="Kiri Engine Unlock"
-        android:supportsRtl="true"
-        android:theme="@android:style/Theme.Material.NoActionBar">
+        android:supportsRtl="true">
 
         <!-- Xposed module metadata -->
         <meta-data
@@ -14,16 +13,16 @@
 
         <meta-data
             android:name="xposeddescription"
-            android:value="Unlock Kiri Engine Pro/VIP features. Hooks subscription verification at the client level. Requires LSPosed (Zygisk). For educational use." />
+            android:value="Unlock Kiri Engine Pro/VIP features" />
 
         <meta-data
             android:name="xposedminversion"
-            android:value="93" />
+            android:value="53" />
 
-        <!-- Explicitly declare the hook entry class -->
+        <!-- Use inline scope string instead of resource -->
         <meta-data
             android:name="xposedscope"
-            android:resource="@array/xposed_scope" />
+            android:value="com.kiriengine.app" />
 
     </application>
 </manifest>
